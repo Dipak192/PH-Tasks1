@@ -1,6 +1,117 @@
 /* Common CSS Sytles */
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+
+:root {
+  --Parafont: Poppins;
+  --primarytextcolor: #3a3a3a;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+header,
+main {
+  margin: 0px auto;
+  width: 90%;
+  background-color: #f0f0f0;
+  box-sizing: border-box;
+}
+/* nav style start */
+
+
+.nav-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-title h3 {
+  color: var(--primarytextcolor);
+  font-size: 24px;
+  font-weight: 700;
+  font-family: var(--Parafont);
+  margin-left: 35px;
+  position: relative;
+  top: 8px;
+}
+
+.nav-title ul li a {
+  text-decoration: none;
+  color: var(--primarytextcolor);
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--Parafont);
+}
+
+.nav-title ul li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 30px;
+  margin-right: 35px;
+}
+.nav-title span{
+  position: relative;
+  top: 10px;
+}
+
+
+/* banner items start */
+.banner {
+  display: flex;
+  justify-content: space-around;
+}
+.banner .baner-img {
+  width: 100%;
+  height: 100%;
+  background-image: url(./influencer-gear/images/Circle\ design.svg);
+  background-repeat: no-repeat;
+  position: relative;
+  left: 100px;
+  top: 10px;
+}
+.baner-text {
+  margin-left: 35px;
+  margin-top: 45px;
+}
+.baner-text h1 {
+  color: var(--primarytextcolor);
+  font-size: 52px;
+  font-family: var(--Parafont);
+  font-weight: 700;
+  line-height: 70px;
+}
+.baner-text p {
+  font-family: var(--Parafont);
+  color: var(--primarytextcolor);
+  font-size: 16px;
+  font-weight: 600;
+  margin: 16px 0px;
+}
+.baner-text button{
+    background-color: #f52866;
+    color: white;
+    padding-bottom: 10px;
+    padding-left: 3px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    position: absolute;
+}
+.baner-text button span{
+    position: relative;
+    top: 7px;
+}
+
+
+/* logo design */
+
+.logoContainer{
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #f0f0f0;
+  margin-top: 120px;
+  padding: 20px;
+  align-items: center;
 }
